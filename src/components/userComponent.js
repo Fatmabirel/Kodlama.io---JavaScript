@@ -1,3 +1,13 @@
+import { UserService } from "../services/userService.js"
+
+console.log("Yüklendi")
+
+let userService = new UserService
+
+userService.add()
+userService.getById(1)
+userService.list()
+
 /*import { BaseLogger, ElasticLogger, MongoLogger } from "../crossCuttingConcerns/logging/logger.js"
 import Customer from "../models/customer.js"
 import User from "../models/user.js"

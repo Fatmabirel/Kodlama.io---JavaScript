@@ -1,6 +1,18 @@
-import { users } from "../data/users.js"
-import DataError from "../models/dataError.js"
+import { users } from "../data/users.js";
+import DataError from "../models/dataError.js";
+export default class UserService {
+  add(user) {
+    console.log("kullanıcı eklendi " + user);
+  }
+  list() {
+    console.log("kullanıcılar listelendi");
+  }
+  getById(id) {
+    console.log("kullanıcı detayı getirildi");
+  }
+}
 
+/*
 export default class UserService {
     constructor(loggerService) {
         this.employees = []
@@ -107,4 +119,4 @@ export default class UserService {
         })
     }
 
-}
+} */
